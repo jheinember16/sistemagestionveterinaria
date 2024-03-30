@@ -86,19 +86,19 @@ if (isset($_SESSION['sesion_email'])) {
                 }else{
                 //echo "ya paso el login";
                     ?>
-                    <ul class="navbar-nav ms-2 me-auto mb-2 mb-lg-0">
-                        <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle btn btn-outline-secondary me-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="display: flex; align-items: center; justify-content: center;">
-                            <i class="bi bi-person-circle" style="font-size: 1.4rem;"></i>
-                                <span style="margin-left: 0.5rem;"><?php echo $nombre_completo_sesion;?></span>
-                        </a>
+                        <ul class="navbar-nav ms-2 me-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle btn btn-muted me-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="display: flex; align-items: center; justify-content: center;">
+                                <i class="bi bi-person-circle" style="font-size: 1.5rem;"></i>
+                                    <span style="margin-left: 0.5rem;"><?php echo $nombre_completo_sesion;?>&nbsp;</span>
+                            </a>
 
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="<?php echo $URL;?>/app/controllers/login/cerrar_sesion.php">Cerrar Sesión</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                <?php
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="<?php echo $URL;?>/app/controllers/login/cerrar_sesion.php">Cerrar Sesión</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                     <?php
                 }
                 ?>                
             </div>
