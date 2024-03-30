@@ -1,5 +1,6 @@
 🐾 Sistema de Gestión de Información para la Clínica Veterinaria 'PETS HOME'
 
+![a](https://github.com/jheinember16/sistemagestionveterinaria/assets/54987070/eb58c945-29cf-4b39-8ee4-4b7d3227b1b4)
 
 
 
@@ -17,4 +18,5 @@
 
 🛠️ Desarrollado con las siguientes tecnologias: 
 
+![b](https://github.com/jheinember16/sistemagestionveterinaria/assets/54987070/a0343322-36c4-4397-a1dc-6787006d9ea4)
 
