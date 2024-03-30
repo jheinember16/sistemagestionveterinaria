@@ -232,7 +232,7 @@ include 'app/controllers/productos/listado_de_productos.php';
         <br>
         <br>
         <br>
-        <h1 style="text-align: center">Testimonios de Clientes</h1> <br><br>
+        <h1 style="text-align: center">Testimonios de Clientes: </h1> <br><br>
         <div class="row text-center">
     <div class="col-md-4 mb-4 mb-md-0"> <!-- Dividido por 3 para mostrar 3 cards -->
       <div class="d-flex justify-content-center mb-4">

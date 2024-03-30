@@ -21,7 +21,8 @@ include "../app/config.php"
   <style>
 
     body.login-page {
-      background-image: url('https://media.istockphoto.com/id/1371820934/es/foto/joven-veterinario-contempor%C3%A1neo-inclin%C3%A1ndose-sobre-el-escritorio-mientras-examina-al-perro.jpg?s=612x612&w=0&k=20&c=XKL2nIgXLnCxyGjl8jg2u1QeHwKFvqSHQUSi7CxWp2M='); /* Cambia la URL por la de tu nueva imagen */
+      background-image: url('https://images.pexels.com/photos/7470634/pexels-photo-7470634.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* Cambia la URL por la de tu nueva imagen */
+      background-size: 100% 100% ; /* Cubre toda el área de la página */
       background-size: 100% 100% ; /* Cubre toda el área de la página */
       background-repeat: no-repeat;
     }
@@ -44,7 +45,7 @@ include "../app/config.php"
 <body class="hold-transition login-page">
 
 <div class="container">
-  <div class="row justify-content-end">
+  <div class="row justify-content-start">
     <div class="col-md-5" >
       <div class="login-box" >
         <div class="card">
