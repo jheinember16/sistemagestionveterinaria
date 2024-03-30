@@ -15,33 +15,42 @@ include 'app/controllers/productos/listado_de_productos.php';
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="https://cdn.pixabay.com/photo/2020/04/04/19/52/medicine-5003631_1280.jpg" height="450px" class="d-block w-100" alt="...">
+                <img src="https://images.pexels.com/photos/7470634/pexels-photo-7470634.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                 height="450px" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <a href="<?php echo $URL;?>/reservar.php" class="btn btn-outline-info btn-lg">Reservar cita</a>
-                    <a href="" class="btn btn-info btn-lg">Ver productos</a><br><br>
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
+                    <a href="<?php echo $URL;?>/reservar.php" class="btn btn-success btn-lg">Reservar cita</a>
+                    <a href="#productos" class="btn btn-success btn-lg">Ver productos</a><br><br>
+                    <br>
+                    <br>
+                    <h5>Chequeo General</h5>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="https://cdn.pixabay.com/photo/2020/03/17/13/57/veterinary-4940425_1280.jpg" height="450px" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
+                    <a href="<?php echo $URL;?>/reservar.php" class="btn btn-success btn-lg">Reservar cita</a>
+                    <br>
+                    <br>
+                    <h5>Nutricion</h5>
+                    
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="https://cdn.pixabay.com/photo/2013/11/23/01/05/bernese-mountain-dog-216113_1280.jpg" height="450px" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
+            <img src="https://images.pexels.com/photos/6235232/pexels-photo-6235232.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" height="450px" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    <a href="<?php echo $URL;?>/reservar.php" class="btn btn-success btn-lg">Reservar cita</a>
+                    <br>
+                    <br>
+                    <h5>Baño y Peluqueria</h5>                  
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="https://cdn.pixabay.com/photo/2020/03/31/16/18/cat-4988407_1280.jpg" height="450px" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
+                    <a href="<?php echo $URL;?>/reservar.php" class="btn btn-success btn-lg">Reservar cita</a>
+                    <br>
+                    <br>
+                    <h5>Obtetricia y Reproduccion</h5>
                 </div>
             </div>
         </div>
@@ -69,18 +78,26 @@ include 'app/controllers/productos/listado_de_productos.php';
             </div>
             <div class="col-md-5 col-sm-12">
                 <br><br><br>
-                <h2>Acerca de nuestra <span style="color: #2431ad">clínica de mascotas</span></h2>
-                <br>
-                <p style="text-align: justify">Lorem Ipsum es simplemente un texto ficticio de la industria de la impresión y la composición tipográfica. Lorem Ipsum ha sido el texto ficticio estándar de la industria desde que Lorem Ipsum es simplemente texto ficticio de la industria de la impresión y la composición tipográfica. Lorem Ipsum ha sido el texto ficticio estándar de la industria desde la</p>
-                <a href="" class="btn btn-outline-primary btn-lg">Mas sobre nosotros</a>
-                <br><br>
+                <h2>Acerca de nuestra <span style="color: #2431ad">clínica veterinaria</span></h2>
+                    <br>
+                    <p style="text-align: justify">Nos dedicamos apasionadamente a proporcionar el más 
+                    alto nivel de atención y cuidado para sus queridas mascotas. Con un equipo de profesionales
+                     altamente calificados y comprometidos, nos esforzamos por establecer un estándar excepcional 
+                     en medicina veterinaria.</p>
+                    <p style="text-align: justify">Nuestra misión es garantizar la salud y el bienestar de 
+                    sus mascotas a través de servicios médicos especializados, utilizando tecnología de 
+                    vanguardia y prácticas basadas en la evidencia. Desde consultas de medicina interna 
+                    hasta procedimientos avanzados de diagnóstico, nuestro enfoque integral aborda las necesidades 
+                    individuales de cada paciente.</p>
+                    <a href="#" class="btn btn-outline-primary btn-lg">Más sobre nosotros</a>
+                    <br><br>
             </div>
         </div>
     </div>
 </section>
 <br>
 
-<section class="our-services" style="background-color: rgba(255,208,45,0.34)">
+<section id="productos" class="our-services" style="background-color: rgba(255,208,45,0.34)">
     <div class="container">
       <div class="row">
           <div class="col-md-12">
@@ -124,13 +141,13 @@ include 'app/controllers/productos/listado_de_productos.php';
           </div>
       </div>
       <div class="row">
-          <div class="col-md-3 ">
+          <div class="col-md-3 zoomP">
               <div class="card">
                   <img src="https://img.freepik.com/foto-gratis/lindo-mascota-collage-aislado_23-2150007407.jpg?size=626&ext=jpg&ga=GA1.1.350373150.1670295459&semt=sph"
                       height="220px" class="card-img-top" alt="...">
                   <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <h5 class="card-title">Ecografía</h5>
+                      <p class="card-text">Nuestros profesionales altamente capacitados utilizan equipos especializados para evaluar órganos internos y estructuras, lo que nos permite diagnosticar de manera precisa condiciones médicas. </p>
                   </div>
               </div>
               <br>
@@ -140,8 +157,8 @@ include 'app/controllers/productos/listado_de_productos.php';
                   <img src="https://img.freepik.com/foto-gratis/cerca-veterinario-cuidando-perro_23-2149100178.jpg?size=626&ext=jpg&ga=GA1.1.350373150.1670295459&semt=sph"
                         height="220px" class="card-img-top" alt="...">
                   <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <h5 class="card-title">Medicina Interna</h5>
+                      <p class="card-text">Utilizando tecnologías avanzadas y métodos de última generación, nos dedicamos a proporcionar una atención médica integral. Desde la gestión de enfermedades crónicas hasta el abordaje de casos médicos complejos.</p>
                   </div>
               </div>
               <br>
@@ -151,8 +168,8 @@ include 'app/controllers/productos/listado_de_productos.php';
                   <img src="https://img.freepik.com/foto-gratis/cerca-veterinario-cuidando-mascota_23-2149143882.jpg?size=626&ext=jpg&ga=GA1.1.350373150.1670295459&semt=sph"
                         height="220px" class="card-img-top" alt="...">
                   <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <h5 class="card-title">Radiologia Digital</h5>
+                      <p class="card-text">Pilar fundamental en nuestro compromiso con la excelencia en el cuidado de sus mascotas. Nuestro servicio de radiología utiliza tecnología digital de última generación, permitiendo una captura de imágenes más rápida y detallada con una menor exposición a la radiación.</p>
                   </div>
               </div>
               <br>
@@ -164,7 +181,6 @@ include 'app/controllers/productos/listado_de_productos.php';
       </div>
     </div>
 </section>
-
 <br>
 <section class="gallery">
     <div class="container">
@@ -212,140 +228,50 @@ include 'app/controllers/productos/listado_de_productos.php';
 
 <section class="clients">
     <div class="container">
-        <br><br>
+        <br>
+        <br>
+        <br>
+        <br>
         <h1 style="text-align: center">Testimonios de Clientes</h1> <br><br>
-        <div class="row">
-            <div id="carouselExampleIndicators" class="carousel slide">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="card">
-                                    <img src="https://img.freepik.com/foto-gratis/cerca-veterinario-cuidando-mascota_23-2149143882.jpg?size=626&ext=jpg&ga=GA1.1.350373150.1670295459&semt=sph"
-                                         height="220px" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
-                                </div>
-                                <br>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="card">
-                                    <img src="https://img.freepik.com/foto-gratis/cerca-veterinario-cuidando-mascota_23-2149143882.jpg?size=626&ext=jpg&ga=GA1.1.350373150.1670295459&semt=sph"
-                                         height="220px" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
-                                </div>
-                                <br>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="card">
-                                    <img src="https://img.freepik.com/foto-gratis/cerca-veterinario-cuidando-mascota_23-2149143882.jpg?size=626&ext=jpg&ga=GA1.1.350373150.1670295459&semt=sph"
-                                         height="220px" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
-                                </div>
-                                <br>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="card">
-                                    <img src="https://img.freepik.com/foto-gratis/cerca-veterinario-cuidando-mascota_23-2149143882.jpg?size=626&ext=jpg&ga=GA1.1.350373150.1670295459&semt=sph"
-                                         height="220px" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
-                                </div>
-                                <br>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="card">
-                                    <img src="https://img.freepik.com/foto-gratis/cerca-veterinario-cuidando-mascota_23-2149143882.jpg?size=626&ext=jpg&ga=GA1.1.350373150.1670295459&semt=sph"
-                                         height="220px" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
-                                </div>
-                                <br>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="card">
-                                    <img src="https://img.freepik.com/foto-gratis/cerca-veterinario-cuidando-mascota_23-2149143882.jpg?size=626&ext=jpg&ga=GA1.1.350373150.1670295459&semt=sph"
-                                         height="220px" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
-                                </div>
-                                <br>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="card">
-                                    <img src="https://img.freepik.com/foto-gratis/cerca-veterinario-cuidando-mascota_23-2149143882.jpg?size=626&ext=jpg&ga=GA1.1.350373150.1670295459&semt=sph"
-                                         height="220px" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
-                                </div>
-                                <br>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="card">
-                                    <img src="https://img.freepik.com/foto-gratis/cerca-veterinario-cuidando-mascota_23-2149143882.jpg?size=626&ext=jpg&ga=GA1.1.350373150.1670295459&semt=sph"
-                                         height="220px" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
-                                </div>
-                                <br>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="card">
-                                    <img src="https://img.freepik.com/foto-gratis/cerca-veterinario-cuidando-mascota_23-2149143882.jpg?size=626&ext=jpg&ga=GA1.1.350373150.1670295459&semt=sph"
-                                         height="220px" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
-                                </div>
-                                <br>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
+        <div class="row text-center">
+    <div class="col-md-4 mb-4 mb-md-0"> <!-- Dividido por 3 para mostrar 3 cards -->
+      <div class="d-flex justify-content-center mb-4">
+        <img src="<?php echo $URL; ?>/public/images/a.png"
+          class="rounded-circle shadow-1-strong" width="100" height="100" />
+      </div>
+      <p class="lead my-3 text-muted">
+        "La clínica veterinaria superó mis expectativas. Su equipo calificado y el trato amable hacia las mascotas hicieron que nuestra visita fuera agradable. ¡Excelente servicio!"
+      </p>
+      <p class="font-italic font-weight-normal mb-0">- Dr. Andrea Velez</p>
+    </div>
+        
+    <div class="col-md-4 mb-4 mb-md-0"> <!-- Dividido por 3 para mostrar 3 cards -->
+        <div class="d-flex justify-content-center mb-4">
+            <img src="<?php echo $URL; ?>/public/images/b.png"
+            class="rounded-circle shadow-1-strong" width="100" height="100" />
         </div>
+        <p class="lead my-3 text-muted">
+            "La atención personalizada y el conocimiento del personal de la clínica nos dieron la confianza de que nuestras mascotas están en las mejores manos. ¡Gracias por su dedicación!"
+        </p>
+        <p class="font-italic font-weight-normal mb-0">- Carlos Cortes</p>      
+    </div>
+
+    <div class="col-md-4 mb-4 mb-md-0"> <!-- Dividido por 3 para mostrar 3 cards -->
+        <div class="d-flex justify-content-center mb-4">
+            <img src="<?php echo $URL; ?>/public/images/c.png"
+            class="rounded-circle shadow-1-strong" width="100" height="100" />
+        </div>
+        <p class="lead my-3 text-muted">
+            "El equipo de la clínica brindó un cuidado excepcional a mi mascota. Estoy impresionada por su profesionalismo y atención al detalle. ¡Altamente recomendado!"
+        </p>
+        <p class="font-italic font-weight-normal mb-0">- Maria Gonzalez</p>      
+    </div>
+  </div>        
     </div>
 </section>
+<br>
+<br>
+<br>
 
 <section class="map">
     <div class="container">
@@ -354,44 +280,44 @@ include 'app/controllers/productos/listado_de_productos.php';
     </div>
 </section>
 
-<section class="contactos">
-<div class="container">
-    <br><br><h1 style="text-align: center">Contactanos</h1><br><br>
-    <div class="row">
-        <div class="col-md-4"></div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-header">
-                        <center><b>Escribenos aquí</b></center>
-                    </div>
-                    <div class="card-body">
-                        <form action="" method="post">
-                            <div class="form-group">
-                                <label for=""><b>Nombre</b></label>
-                                <input type="text" class="form-control" placeholder="Escribe tu nombre...">
-                            </div>
-                            <br>
-                            <div class="form-group">
-                                <label for=""><b>Correo</b></label>
-                                <input type="email" class="form-control" placeholder="Escribe tu correo...">
-                            </div>
-                            <br>
-                            <div class="form-group">
-                                <label for=""><b>Mensaje</b></label>
-                                <textarea name="" id="" cols="30" rows="5" class="form-control"></textarea>
-                            </div>
-                            <hr>
-                            <div class="d-grid gap-2">
-                                <button class="btn btn-primary" type="submit">Enviar</button>
-                            </div>
-                        </form>
+<section id="contacto" class="contactos">
+    <div class="container">
+        <br><br><h1 style="text-align: center">Contactanos</h1><br><br>
+        <div class="row">
+            <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <center><b>Escribenos aquí</b></center>
+                        </div>
+                        <div class="card-body">
+                            <form action="" method="post">
+                                <div class="form-group">
+                                    <label for=""><b>Nombre</b></label>
+                                    <input type="text" class="form-control" placeholder="Escribe tu nombre...">
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <label for=""><b>Correo</b></label>
+                                    <input type="email" class="form-control" placeholder="Escribe tu correo...">
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <label for=""><b>Mensaje</b></label>
+                                    <textarea name="" id="" cols="30" rows="5" class="form-control"></textarea>
+                                </div>
+                                <hr>
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-primary" type="submit">Enviar</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
-            </div>
-        <div class="col-md-4"></div>
+            <div class="col-md-4"></div>
+        </div>
+        <br><br>
     </div>
-    <br><br>
-</div>
 </section>
 
 <?php

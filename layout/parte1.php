@@ -30,16 +30,13 @@ if (isset($_SESSION['sesion_email'])) {
 
     <link href="<?php echo $URL;?>/public/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-
+    
     <!-- ICONOS DE BOOTSTRAP -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
     <!-- JQUERY -->
     <script src="<?php echo $URL;?>/public/js/jquery-3.6.4.min.js"></script> 
-
     <!-- STYLES CSS -->
     <link rel="stylesheet" href="<?php echo $URL;?>/public/css/style.css">
-
      <!-- Libreria de mensajes Sweetalert2 -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head>
@@ -47,41 +44,33 @@ if (isset($_SESSION['sesion_email'])) {
 
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container">
-        <a class="navbar-brand" href="<?php echo $URL;?>">
-            <img src="https://www.merida.gob.mx/salud/assets/img/elements/servicios-03.svg"
-                 alt="Logo" width="50" height="24" class="d-inline-block align-text-top">
-            Bootstrap
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <a class="navbar-brand" href="<?php echo $URL;?>" style="font-family: 'Open Sans', sans-serif; font-size: 20px; font-weight: bold; text-decoration: none; color: #333;">
+        <img src="<?php echo $URL; ?>/public/images/pets.jpg" alt="Logo" width="130" height="70" style="margin-right: 10px; vertical-align: middle;">
+        <span style="vertical-align: middle;">Clínica Veterinaria PETS HOME</span>
+    </a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle btn btn-outline-info" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Ingresar
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="login">Iniciar sesion</a></li>
-                        <li><a class="dropdown-item" href="login/registro.php">Registrar</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn btn-outline-info">Disabled</a>
-                </li>
             </ul>
             <div class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
+
+                <a class="btn btn-info me-2" href="<?php echo $URL;?>" role="button">
+                  <i class="bi bi-house-door-fill pe-1"></i> Inicio
+                </a> 
+
+                <a class="btn btn-info me-5" href="#contacto" role="button">
+                  <i href="#" class="bi bi-person-vcard-fill pe-1"></i> Contacto
+                </a>
                 <?php
+
+               
                 
                 if($email_sesion == ""){
                     //echo "sin logearse";
                     ?>
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle btn btn-outline-info" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Ingresar
+                            <a class="btn btn-success" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-box-arrow-in-right me-1"></i> Ingresar
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="<?php echo $URL; ?>/login">Iniciar Sesión</a></li>
@@ -89,15 +78,16 @@ if (isset($_SESSION['sesion_email'])) {
                             </ul>
                         </li>
                     </ul>
+
                 <?php
                 }else{
                 //echo "ya paso el login";
                     ?>
                     <ul class="navbar-nav ms-2 me-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle btn btn-outline-info" href="#" role="button" data-bs-toggle="dropdown"
+                            <a class="nav-link dropdown-toggle btn btn-outline-secondary" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                                <?php echo $email_sesion;?>
+                                <?php echo $nombre_completo_sesion;?>
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="<?php echo $URL;?>/app/controllers/login/cerrar_sesion.php">Cerrar Sesión</a></li>
