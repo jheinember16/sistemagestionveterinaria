@@ -44,22 +44,25 @@ if (isset($_SESSION['sesion_email'])) {
 
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container">
-    <a class="navbar-brand" href="<?php echo $URL;?>" style="font-family: 'Open Sans', sans-serif; font-size: 20px; font-weight: bold; text-decoration: none; color: #333;">
-        <img src="<?php echo $URL; ?>/public/images/pets.jpg" alt="Logo" width="130" height="70" style="margin-right: 10px; vertical-align: middle;">
-        <span style="vertical-align: middle;">Clínica Veterinaria PETS HOME</span>
-    </a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            </ul>
-            <div class="d-flex" role="search">
+        <a class="navbar-brand" href="<?php echo $URL;?>" style="font-family: 'Open Sans', sans-serif; font-size: 20px; font-weight: bold; text-decoration: none; color: #333;">
+            <img src="<?php echo $URL; ?>/public/images/pets.jpg" alt="Logo" width="130" height="70" style="margin-right: 10px; vertical-align: middle;">
+            <span style="vertical-align: middle;">Clínica Veterinaria PETS HOME</span>
+        </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                </ul>
+                <div class="d-flex" role="search">
 
-                <a class="btn btn-info me-2" href="<?php echo $URL;?>" role="button">
-                  <i class="bi bi-house-door-fill pe-1"></i> Inicio
-                </a> 
+                <div style="display: flex; align-items: center;">
+        <a class="btn btn-info me-2" href="<?php echo $URL;?>" role="button">
+            <i class="bi bi-house-door-fill pe-1"></i> Inicio
+        </a> 
 
-                <a class="btn btn-info me-5" href="#contacto" role="button">
-                  <i href="#" class="bi bi-person-vcard-fill pe-1"></i> Contacto
-                </a>
+        <a class="btn btn-info me-5" href="#contacto" role="button">
+            <i class="bi bi-person-vcard-fill pe-1"></i> Contacto
+        </a>
+    </div>
+
                 <?php
 
                
@@ -85,10 +88,11 @@ if (isset($_SESSION['sesion_email'])) {
                     ?>
                     <ul class="navbar-nav ms-2 me-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle btn btn-outline-secondary" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                                <?php echo $nombre_completo_sesion;?>
-                            </a>
+                        <a class="nav-link dropdown-toggle btn btn-outline-secondary me-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="display: flex; align-items: center; justify-content: center;">
+                            <i class="bi bi-person-circle" style="font-size: 1.4rem;"></i>
+                                <span style="margin-left: 0.5rem;"><?php echo $nombre_completo_sesion;?></span>
+                        </a>
+
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="<?php echo $URL;?>/app/controllers/login/cerrar_sesion.php">Cerrar Sesión</a></li>
                             </ul>

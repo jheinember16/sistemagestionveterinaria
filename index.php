@@ -15,7 +15,7 @@ include 'app/controllers/productos/listado_de_productos.php';
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="https://images.pexels.com/photos/7470634/pexels-photo-7470634.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                <img src="<?php echo $URL; ?>/public/images/slider1.jpg" 
                  height="450px" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <a href="<?php echo $URL;?>/reservar.php" class="btn btn-success btn-lg">Reservar cita</a>

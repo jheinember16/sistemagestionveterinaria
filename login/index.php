@@ -45,7 +45,7 @@ include "../app/config.php"
 <body class="hold-transition login-page">
 
 <div class="container">
-  <div class="row justify-content-start">
+  <div class="row justify-content-end">
     <div class="col-md-5" >
       <div class="login-box" >
         <div class="card">
@@ -79,7 +79,7 @@ include "../app/config.php"
                <hr>
                <br>
                <button type="submit" class="btn btn-primary mb-1" style="width: 100%">Ingresar</button>
-               <a href="" class="btn btn-secondary mt-1" style="width: 100%">Cancelar</a>
+               <a href="<?php echo $URL;?>" class="btn btn-secondary mt-1" style="width: 100%">Cancelar</a>
             </form>
             <!-- /.social-auth-links -->
           </div>
